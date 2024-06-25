@@ -30,7 +30,7 @@ class UserController extends Controller
     public function registeredUser()
     {
 
-        $registeredUser = User::where('status', 'in active')->where('role_id', 2)->get();
+        $registeredUser = User::where('status', 'inactive')->where('role_id', 2)->get();
 
         return view('registerd-user', ['registeredUser' => $registeredUser]);
     }
