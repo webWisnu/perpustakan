@@ -5,7 +5,7 @@
 
 1. Clone repository
     ```bash
-    git clone https://github.com/username/nama-proyek.git
+    git clone https://github.com/webWisnu/perpus.git
     cd nama-proyek
     ```
 
@@ -28,8 +28,46 @@
     ```bash
     php artisan migrate
     ```
+6. Jalankan migrasi database seeder untuk membuat data dummy di table role
+    ```bash
+    php artisan db:seed --class=RoleSeeder
+    ```
+    
 
-6. Jalankan server
+7. Jalankan migrasi database seeder untuk membuat data dummy di table users
+    ```bash
+   php artisan db:seed --class=DatabaseSeeder
+
+    ```
+8. Jalankan migrasi database seeder untuk membuat data dummy di table category
+    ```bash
+   php artisan db:seed --class=CategorySeeder
+
+
+    ```
+
+9. Jalankan File Storage
+    ```bash
+    php artisan storage:link
+
+    ```
+10. Jalankan server
     ```bash
     php artisan serve
     ```
+    
+Menentukan Peran Pengguna
+
+ - Role 1 = Admin
+ - Role 2 = user
+
+Perbarui status warna pengembalian buku di halaman detail
+
+- Jika buku dikembalikan tepat waktu, halaman detail buku akan menampilkan warna hijau.
+- Jika buku dikembalikan terlambat, halaman detail buku akan menampilkan warna merah.
+
+
+
+
+                     
+
