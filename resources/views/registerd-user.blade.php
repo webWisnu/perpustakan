@@ -7,7 +7,7 @@
 
 @section('content')
     <h1>
-       Daftar Pengguna Yang Belum Aktif .
+        Daftar Pengguna Yang Belum Aktif .
     </h1>
 
 
@@ -61,7 +61,7 @@
                         <td>
 
                             <button type="submit" class="btn btn-warning">
-                                <a href="/user-detail/{{ $item->slug }}">Detail</a></button>
+                                <a href="/user-approve/{{ $item->slug }}">Aktifkan User</a></button>
 
 
                         </td>
