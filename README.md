@@ -11,7 +11,7 @@
 
 2. Instal dependensi
     ```bash
-    composer install
+    composer update
     ```
 
 3. Salin file `.env.example` ke `.env` dan konfigurasikan
